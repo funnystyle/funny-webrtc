@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
+    <button id="btn">
+        begin gUM
+    </button>
+    <br>
+    <br>
+    <br>
     <video id="video" autoplay controls muted playsinline></video>
 
     <script src="adapter.js"></script>
@@ -16,9 +22,11 @@
                 facingMode: "environment"
             }
         };
-        navigator.mediaDevices.getUserMedia(constraints)
-            .then((stream) => {video.srcObject = stream})
-            .catch( console.error );
+        btn.onclick = e => {
+            navigator.mediaDevices.getUserMedia(constraints)
+                .then((stream) => {video.srcObject = stream})
+                .catch( console.error );
+        };
     </script>
 </body>
 </html>
