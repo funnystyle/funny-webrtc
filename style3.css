@@ -9,7 +9,6 @@
     left: 10px;
     background: white;
 }
-
 .display-cover {
     display: flex;
     justify-content: center;
@@ -18,25 +17,21 @@
     margin: 5% auto;
     position: relative;
 }
-
 video {
     width: 100%;
     background: rgba(0, 0, 0, 0.2);
 }
-
 .video-options {
     position: absolute;
     left: 20px;
     top: 30px;
 }
-
 .controls {
     position: absolute;
     right: 20px;
     top: 20px;
     display: flex;
 }
-
 .controls > button {
     width: 45px;
     height: 45px;
@@ -45,21 +40,17 @@ video {
     margin: 0 6px;
     background: transparent;
 }
-
 .controls > button:hover svg {
     color: white !important;
 }
-
 @media (min-width: 300px) and (max-width: 400px) {
     .controls {
         flex-direction: column;
-    }
-
+   }
     .controls button {
         margin: 5px 0 !important;
-    }
+   }
 }
-
 .controls > button > svg {
     height: 20px;
     width: 18px;
@@ -67,31 +58,24 @@ video {
     margin: 0 auto;
     padding: 0;
 }
-
 .controls button:nth-child(1) {
-    border: 2px solid #D2002E;
+    border: 2px solid #d2002e;
 }
-
 .controls button:nth-child(1) svg {
-    color: #D2002E;
+    color: #d2002e;
 }
-
 .controls button:nth-child(2) {
     border: 2px solid #008496;
 }
-
 .controls button:nth-child(2) svg {
     color: #008496;
 }
-
 .controls button:nth-child(3) {
-    border: 2px solid #00B541;
+    border: 2px solid #00b541;
 }
-
 .controls button:nth-child(3) svg {
-    color: #00B541;
+    color: #00b541;
 }
-
 .controls > button {
     width: 45px;
     height: 45px;
@@ -100,7 +84,6 @@ video {
     margin: 0 6px;
     background: transparent;
 }
-
 .controls > button:hover svg {
     color: white;
 }
