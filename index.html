@@ -28,6 +28,7 @@
                 navigator.mediaDevices
                     .getUserMedia(constraints)
                     .then(function(stream) {
+                        window.stream = stream;
                         if ("srcObject" in video) {
                             video.srcObject = stream;
                         } else {
