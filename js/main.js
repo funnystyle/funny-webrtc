@@ -106,6 +106,6 @@ function start() {
 audioInputSelect.onchange = start;
 audioOutputSelect.onchange = changeAudioDestination;
 
-videoSelect.onchange = start;
+// videoSelect.onchange = start;
 
 start();
