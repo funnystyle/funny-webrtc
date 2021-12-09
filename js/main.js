@@ -97,8 +97,9 @@ function start() {
   const videoSource = videoSelect.value;
   const constraints = {
     audio: false,//{deviceId: audioSource ? {exact: audioSource} : undefined},
-    video: {deviceId: videoSource ? {exact: videoSource} : undefined}
-  };
+    // video: {} {deviceId: videoSource ? {exact: videoSource} : undefined}
+    video: { facingMode: { exact: "environment" } }
+  }
   navigator.mediaDevices.getUserMedia(constraints).then(gotStream).then(gotDevices).catch(handleError);
 }
 
